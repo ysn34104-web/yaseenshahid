@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaseen Shahid SSM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="ICON.png">
+<link rel="icon" type="image/png" sizes="16x16" href="ICON.png">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo"><div class="logo-text">Yaseen<span> Shahid</span> SSM</div></div>
+            <nav>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>GROW YOUR BRAND</h1>
+            <h2>ON SOCIAL MEDIA PLATFORMS</h2>
+            <p>Expert Facebook, YouTube, and Instagram marketing strategies to grow your audience and boost engagement.</p>
+            <a href="#contact" class="btn">GET STARTED</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item animate">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="feature-title">Data-Driven Strategies</h3>
+                    <p>We use analytics to optimize your social media performance</p>
+                </div>
+                <div class="feature-item animate">
+                    <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="feature-title">Creative Content</h3>
+                    <p>Eye-catching visuals and compelling copy that converts</p>
+                </div>
+                <div class="feature-item animate">
+                    <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3 class="feature-title">Targeted Advertising</h3>
+                    <p>Precise audience targeting to maximize your ROI</p>
+                </div>
+                <div class="feature-item animate">
+                    <div class="feature-icon"><i class="fas fa-award"></i></div>
+                    <h3 class="feature-title">5 Years Experience</h3>
+                    <p>Trust our experienced team for quality social media management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services CTA -->
+    <section class="services-cta">
+        <div class="container">
+            <h2>OUR SOCIAL MEDIA SERVICES</h2>
+            <a href="#contact" class="btn btn-outline">GET A FREE AUDIT</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Social Media Marketing Services</h2>
+            <div class="services-grid">
+                <div class="service-card animate"><div class="service-icon facebook"><i class="fab fa-facebook"></i></div><div class="service-content"><h3 class="service-title">Facebook Marketing</h3><p class="service-description">Complete Facebook business management including page optimization, content strategy, targeted ads, and community engagement.</p></div></div>
+                <div class="service-card animate"><div class="service-icon youtube"><i class="fab fa-youtube"></i></div><div class="service-content"><h3 class="service-title">YouTube Management</h3><p class="service-description">End-to-end YouTube channel management including content strategy, video optimization, audience growth, and monetization.</p></div></div>
+                <div class="service-card animate"><div class="service-icon instagram"><i class="fab fa-instagram"></i></div><div class="service-content"><h3 class="service-title">Instagram Growth</h3><p class="service-description">Strategic Instagram content planning, Stories, Reels, influencer collaborations, and shoppable posts to boost engagement.</p></div></div>
+                <div class="service-card animate"><div class="service-icon"><i class="fas fa-ad"></i></div><div class="service-content"><h3 class="service-title">Social Media Advertising</h3><p class="service-description">Targeted ad campaigns across Facebook, Instagram, and YouTube to reach your ideal customers and drive conversions.</p></div></div>
+                <div class="service-card animate"><div class="service-icon"><i class="fas fa-analytics"></i></div><div class="service-content"><h3 class="service-title">Analytics & Reporting</h3><p class="service-description">Comprehensive performance tracking with detailed reports and insights to measure ROI and optimize strategies.</p></div></div>
+                <div class="service-card animate"><div class="service-icon"><i class="fas fa-users"></i></div><div class="service-content"><h3 class="service-title">Community Management</h3><p class="service-description">Active engagement with your audience, responding to comments, and building a loyal community around your brand.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Yaseen Shahid SSM</h3>
+                    <p>We specialize in Facebook, YouTube, and Instagram marketing to help businesses grow their online presence and engage with their audience.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/yaseen.shahid.official"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@hafizmuhammadshaheryar"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/itx_yaseen.143/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/yaseen.shahid.official"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 17Km Ferozpur Road,Attari Saroba,Lahore,Punjab,Pakistan</p>
+                    <p><i class="fas fa-phone"></i> 03234109399</p>
+                    <p><i class="fas fa-envelope"></i> Shahidy762@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <a href="#">Facebook Marketing</a>
+                    <a href="#">YouTube Management</a>
+                    <a href="#">Instagram Growth</a>
+                    <a href="#">Social Media Advertising</a>
+                    <a href="#">Analytics & Reporting</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Business Hours</h3>
+                    <p>Monday-Saturday: 1:00 PM - 9:00 PM</p>
+                    <p>Sunday: Open</p>
+                    <p>Emergency social media support available.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Yaseen Shahid SSM. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
+                    document.querySelector('nav ul').classList.remove('show');
+                }
+            });
+        });
+
+        // Animate on scroll
+        const animatedElements = document.querySelectorAll('.animate');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.style.animation = 'fadeInUp 1s forwards';
+                }
+            });
+        }, { threshold: 0.2 });
+        animatedElements.forEach(el => observer.observe(el));
+    </script>
+    <!-- Popup Form -->
+<div id="popup-form" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:2000;">
+    <div style="background:white; padding:30px; border-radius:8px; width:90%; max-width:400px; position:relative; text-align:left;">
+        <button id="close-form" style="position:absolute; top:10px; right:10px; border:none; background:none; font-size:20px; cursor:pointer;">&times;</button>
+        <h2>Get Started</h2>
+        <form id="lead-form">
+            <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:10px; margin-bottom:10px;">
+            <input type="email" name="email" placeholder="Email" required style="width:100%; padding:10px; margin-bottom:10px;">
+            <input type="text" name="mobile" placeholder="Mobile Number" required style="width:100%; padding:10px; margin-bottom:10px;">
+            <input type="text" name="city" placeholder="City" required style="width:100%; padding:10px; margin-bottom:10px;">
+            <input type="text" name="province" placeholder="Province" required style="width:100%; padding:10px; margin-bottom:10px;">
+            <button type="submit" class="btn" style="width:100%;">Submit</button>
+        </form>
+        <div id="form-success" style="display:none; color:green; margin-top:10px;">Thank you for contacting us! Our team has received your request and will get back to you shortly</div>
+    </div>
+</div>
+<script src="database.js"></script>
+</body>
+</html>
