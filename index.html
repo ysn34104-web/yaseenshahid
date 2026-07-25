@@ -15,15 +15,17 @@
 
 </head>
 <body>
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
         <div class="container header-container">
-            <div class="logo"><div class="logo-text">Yaseen<span> Shahid</span> SMM</div></div>
+            <div class="logo">
+                <div class="logo-text">Yaseen<span> Shahid</span> SMM</div>
+            </div>
             <nav>
                 <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
                 <ul>
-                    <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -31,45 +33,149 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <!-- SERVICES - FLEXIBLE CONTAINER (auto-wrap, add unlimited) -->
+    <section class="services-top" id="services">
         <div class="container">
-            <h1>GROW YOUR BRAND</h1>
-            <h2>ON SOCIAL MEDIA PLATFORMS</h2>
-            <p>Expert Facebook, YouTube, and Instagram marketing strategies to grow your audience and boost engagement.</p>
-            <a href="#contact" class="btn">GET STARTED</a>
-        </div>
-    </section>
+            <h2 class="section-title">Premium Editing Tools – All Features Unlocked</h2>
+            <div class="services-grid">
+                <!-- Card 1: CapCut Pro -->
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <!-- IMAGE: Replace src with your CapCut icon/image -->
+                        <img src="Capcut-icon.png" onclick="location.href='capcutscreen.html'" />
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">CapCut Pro</h3>
+                        <p class="service-description">Professional video editing with all premium features unlocked.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> No watermark</li>
+                            <li><i class="fas fa-check-circle"></i> All transitions & effects</li>
+                            <li><i class="fas fa-check-circle"></i> 4K export</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced color grading</li>
+                            <li><i class="fas fa-check-circle"></i> Auto-captions & voiceover</li>
+                        </ul>
+                        <a href="https://wa.me/923234109399?text=I%20want%20CapCut%20Pro%20unlocked" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                    </div>
+                </div>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-item animate">
-                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3 class="feature-title">Data-Driven Strategies</h3>
-                    <p>We use analytics to optimize your social media performance</p>
+                <!-- Card 2: Remini Pro -->
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <!-- IMAGE: Replace src with your Remini icon/image -->
+                        <img src="remini.jpg" />
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Remini Pro</h3>
+                        <p class="service-description">AI-powered photo enhancement with all pro features unlocked.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> HD/4K photo enhancement</li>
+                            <li><i class="fas fa-check-circle"></i> Old photo restoration</li>
+                            <li><i class="fas fa-check-circle"></i> AI colorization</li>
+                            <li><i class="fas fa-check-circle"></i> Face retouching</li>
+                            <li><i class="fas fa-check-circle"></i> Batch processing</li>
+                        </ul>
+                        <a href="https://wa.me/923234109399?text=I%20want%20Remini%20Pro%20unlocked" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                    </div>
                 </div>
-                <div class="feature-item animate">
-                    <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
-                    <h3 class="feature-title">Creative Content</h3>
-                    <p>Eye-catching visuals and compelling copy that converts</p>
+
+                <!-- Card 3: Inshot Pro -->
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <!-- IMAGE: Replace src with your Inshot icon/image -->
+                        <img src="inshot.png" />
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Inshot Pro</h3>
+                        <p class="service-description">All-in-one video & photo editor with pro features unlocked.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> No watermark</li>
+                            <li><i class="fas fa-check-circle"></i> All filters & effects</li>
+                            <li><i class="fas fa-check-circle"></i> 4K export</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced transitions</li>
+                            <li><i class="fas fa-check-circle"></i> Voiceover & sound effects</li>
+                        </ul>
+                        <a href="https://wa.me/923234109399?text=I%20want%20Inshot%20Pro%20unlocked" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                    </div>
                 </div>
-                <div class="feature-item animate">
-                    <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
-                    <h3 class="feature-title">Targeted Advertising</h3>
-                    <p>Precise audience targeting to maximize your ROI</p>
-                </div>
-                <div class="feature-item animate">
-                    <div class="feature-icon"><i class="fas fa-award"></i></div>
-                    <h3 class="feature-title">5 Years Experience</h3>
-                    <p>Trust our experienced team for quality social media management</p>
-                </div>
+
+                <!-- Card 4: Adobe Premiere Pro (Example - you can add more) -->
+                <!-- <div class="service-card animate">
+                    <div class="service-icon"> -->
+                        <!-- IMAGE: Replace src with your own icon -->
+                        <!-- <img src="https://via.placeholder.com/80x80/FF8C00/FFFFFF?text=Premiere" alt="Premiere Pro Icon" />
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Premiere Pro</h3>
+                        <p class="service-description">Professional video editing with all premium features unlocked.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> No watermark</li>
+                            <li><i class="fas fa-check-circle"></i> All transitions & effects</li>
+                            <li><i class="fas fa-check-circle"></i> 4K export</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced color grading</li>
+                            <li><i class="fas fa-check-circle"></i> Auto-captions & voiceover</li>
+                        </ul>
+                        <a href="https://wa.me/923234109399?text=I%20want%20Premiere%20Pro%20unlocked" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                    </div>
+                </div> -->
+
+                <!-- Card 5: After Effects (Example - add as many as you want) -->
+                <!-- <div class="service-card animate">
+                    <div class="service-icon"> -->
+                        <!-- IMAGE: Replace src with your own icon -->
+                        <!-- <img src="https://via.placeholder.com/80x80/FF8C00/FFFFFF?text=AE" alt="After Effects Icon" />
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">After Effects</h3>
+                        <p class="service-description">Professional motion graphics with all premium features unlocked.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> No watermark</li>
+                            <li><i class="fas fa-check-circle"></i> All transitions & effects</li>
+                            <li><i class="fas fa-check-circle"></i> 4K export</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced color grading</li>
+                            <li><i class="fas fa-check-circle"></i> Auto-captions & voiceover</li>
+                        </ul>
+                        <a href="https://wa.me/923234109399?text=I%20want%20After%20Effects%20unlocked" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                    </div>
+                </div> -->
+
+                <!-- Card 6: Lightroom (Example - keep adding more) -->
+                <!-- <div class="service-card animate">
+                    <div class="service-icon"> -->
+                        <!-- IMAGE: Replace src with your own icon -->
+                        <!-- <img src="Capcut-icon.png" />
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Lightroom Pro</h3>
+                        <p class="service-description">Professional photo editing with all premium features unlocked.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> No watermark</li>
+                            <li><i class="fas fa-check-circle"></i> All filters & effects</li>
+                            <li><i class="fas fa-check-circle"></i> 4K export</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced color grading</li>
+                            <li><i class="fas fa-check-circle"></i> Auto-captions & voiceover</li>
+                        </ul>
+                        <a href="https://wa.me/923234109399?text=I%20want%20Lightroom%20Pro%20unlocked" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                    </div>
+                </div> -->
+                <!-- Add more cards here as needed - they will auto-wrap -->
             </div>
         </div>
     </section>
 
-    <!-- Services CTA -->
+    <!-- FEATURES - middle section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-item animate"><div class="feature-icon"><i class="fas fa-chart-line"></i></div><h3 class="feature-title">Data-Driven Strategies</h3><p>We use analytics to optimize your social media performance</p></div>
+                <div class="feature-item animate"><div class="feature-icon"><i class="fas fa-paint-brush"></i></div><h3 class="feature-title">Creative Content</h3><p>Eye-catching visuals and compelling copy that converts</p></div>
+                <div class="feature-item animate"><div class="feature-icon"><i class="fas fa-bullseye"></i></div><h3 class="feature-title">Targeted Advertising</h3><p>Precise audience targeting to maximize your ROI</p></div>
+                <div class="feature-item animate"><div class="feature-icon"><i class="fas fa-award"></i></div><h3 class="feature-title">5 Years Experience</h3><p>Trust our experienced team for quality social media management</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES CTA -->
     <section class="services-cta">
         <div class="container">
             <h2>OUR SOCIAL MEDIA SERVICES</h2>
@@ -77,27 +183,22 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">Our Social Media Marketing Services</h2>
-            <div class="services-grid">
-                <div class="service-card animate"><div class="service-icon facebook"><i class="fab fa-facebook"></i></div><div class="service-content"><h3 class="service-title">Facebook Marketing</h3><p class="service-description">Complete Facebook business management including page optimization, content strategy, targeted ads, and community engagement.</p></div></div>
-                <div class="service-card animate"><div class="service-icon youtube"><i class="fab fa-youtube"></i></div><div class="service-content"><h3 class="service-title">YouTube Management</h3><p class="service-description">End-to-end YouTube channel management including content strategy, video optimization, audience growth, and monetization.</p></div></div>
-                <div class="service-card animate"><div class="service-icon instagram"><i class="fab fa-instagram"></i></div><div class="service-content"><h3 class="service-title">Instagram Growth</h3><p class="service-description">Strategic Instagram content planning, Stories, Reels, influencer collaborations, and shoppable posts to boost engagement.</p></div></div>
-                <div class="service-card animate"><div class="service-icon"><i class="fas fa-ad"></i></div><div class="service-content"><h3 class="service-title">Social Media Advertising</h3><p class="service-description">Targeted ad campaigns across Facebook, Instagram, and YouTube to reach your ideal customers and drive conversions.</p></div></div>
-                <div class="service-card animate"><div class="service-icon"><i class="fas fa-analytics"></i></div><div class="service-content"><h3 class="service-title">Analytics & Reporting</h3><p class="service-description">Comprehensive performance tracking with detailed reports and insights to measure ROI and optimize strategies.</p></div></div>
-                <div class="service-card animate"><div class="service-icon"><i class="fas fa-users"></i></div><div class="service-content"><h3 class="service-title">Community Management</h3><p class="service-description">Active engagement with your audience, responding to comments, and building a loyal community around your brand.</p></div></div>
-            </div>
+    <!-- HERO - BOTTOM SECTION -->
+    <section class="hero-bottom" id="about">
+        <div class="container hero-content">
+            <h1>GROW YOUR BRAND</h1>
+            <h2>ON SOCIAL MEDIA PLATFORMS</h2>
+            <p>Expert Facebook, YouTube, and Instagram marketing strategies to grow your audience and boost engagement.</p>
+            <a href="contact-screen.html" class="btn">GET STARTED</a>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer id="contact">
         <div class="container">
             <div class="footer-container">
                 <div class="footer-col">
-                    <h3>Yaseen Shahid SMM</h3>
+                    <h3>Yaseen <span>Shahid</span> SMM</h3>
                     <p>We specialize in Facebook, YouTube, and Instagram marketing to help businesses grow their online presence and engage with their audience.</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/yaseen.shahid.official"><i class="fab fa-facebook-f"></i></a>
@@ -108,7 +209,7 @@
                 </div>
                 <div class="footer-col">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 17Km Ferozpur Road,Attari Saroba,Lahore,Punjab,Pakistan</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 17Km Ferozpur Road, Attari Saroba, Lahore, Punjab, Pakistan</p>
                     <p><i class="fas fa-phone"></i> 03234109399</p>
                     <p><i class="fas fa-envelope"></i> Shahidy762@gmail.com</p>
                 </div>
@@ -133,53 +234,22 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('show');
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
-                    document.querySelector('nav ul').classList.remove('show');
-                }
-            });
-        });
-
-        // Animate on scroll
-        const animatedElements = document.querySelectorAll('.animate');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    entry.target.style.animation = 'fadeInUp 1s forwards';
-                }
-            });
-        }, { threshold: 0.2 });
-        animatedElements.forEach(el => observer.observe(el));
-    </script>
-    <!-- Popup Form -->
-<div id="popup-form" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:2000;">
-    <div style="background:white; padding:30px; border-radius:8px; width:90%; max-width:400px; position:relative; text-align:left;">
-        <button id="close-form" style="position:absolute; top:10px; right:10px; border:none; background:none; font-size:20px; cursor:pointer;">&times;</button>
-        <h2>Get Started</h2>
-        <form id="lead-form">
-            <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:10px; margin-bottom:10px;">
-            <input type="email" name="email" placeholder="Email" required style="width:100%; padding:10px; margin-bottom:10px;">
-            <input type="text" name="mobile" placeholder="Mobile Number" required style="width:100%; padding:10px; margin-bottom:10px;">
-            <input type="text" name="city" placeholder="City" required style="width:100%; padding:10px; margin-bottom:10px;">
-            <input type="text" name="province" placeholder="Province/Country" required style="width:100%; padding:10px; margin-bottom:10px;">
-            <button type="submit" class="btn" style="width:100%;">Submit</button>
-        </form>
-        <div id="form-success" style="display:none; color:green; margin-top:10px;">Thank you for contacting us! Our team has received your request and will get back to you shortly</div>
+    <!-- POPUP FORM -->
+    <div id="popup-form" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:2000;">
+        <div style="background:white; padding:30px; border-radius:16px; width:90%; max-width:400px; position:relative; text-align:left;">
+            <button id="close-form" style="position:absolute; top:12px; right:16px; border:none; background:none; font-size:24px; cursor:pointer; color:#999;">&times;</button>
+            <h2 style="margin-bottom:20px;">Get Started</h2>
+            <form id="lead-form">
+                <input type="text" name="name" placeholder="Full Name" required style="width:100%; padding:12px; margin-bottom:12px; border:2px solid #e5e5e5; border-radius:8px; font-size:15px;" />
+                <input type="email" name="email" placeholder="Email" required style="width:100%; padding:12px; margin-bottom:12px; border:2px solid #e5e5e5; border-radius:8px; font-size:15px;" />
+                <input type="text" name="mobile" placeholder="Mobile Number" required style="width:100%; padding:12px; margin-bottom:12px; border:2px solid #e5e5e5; border-radius:8px; font-size:15px;" />
+                <input type="text" name="city" placeholder="City" required style="width:100%; padding:12px; margin-bottom:12px; border:2px solid #e5e5e5; border-radius:8px; font-size:15px;" />
+                <input type="text" name="province" placeholder="Province/Country" required style="width:100%; padding:12px; margin-bottom:12px; border:2px solid #e5e5e5; border-radius:8px; font-size:15px;" />
+                <button type="submit" class="btn" style="width:100%;">Submit</button>
+            </form>
+            <div id="form-success" style="display:none; color:#16a34a; margin-top:15px; font-weight:600;">Thank you for contacting us! Our team has received your request and will get back to you shortly</div>
+        </div>
     </div>
-</div>
 <script src="database.js"></script>
 </body>
 </html>
