@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us · Yaseen Shahid</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+   <link rel="icon" type="image/png" sizes="32x32" href="ICON.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="ICON.png" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background: #0b0e14;
+      color: #f0ece4;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .about {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+      padding: 1.5rem 0.5rem;
+    }
+
+    /* ----- heading with orange accent ----- */
+    .heading {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .heading h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      background: linear-gradient(145deg, #ff7b00, #ff9f1c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 30px rgba(255, 123, 0, 0.2);
+      display: inline-block;
+    }
+
+    .heading .sub-head {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #c0bdb6;
+      letter-spacing: 1px;
+      border-bottom: 2px solid rgba(255, 123, 0, 0.3);
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    /* ----- cards grid ----- */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: #161c24;
+      padding: 2rem 1.8rem;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 123, 0, 0.15);
+      backdrop-filter: blur(2px);
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.6);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: #ff7b00;
+      box-shadow: 0 20px 40px -12px rgba(255, 123, 0, 0.35);
+      background: #1b232d;
+    }
+
+    .card h2 {
+      color: #ff8c1a;
+      font-size: 1.9rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .card h2 i {
+      font-size: 1.8rem;
+      color: #ff9f1c;
+      filter: drop-shadow(0 0 6px rgba(255, 123, 0, 0.4));
+    }
+
+    .card p {
+      color: #d6d2c9;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    .card p b {
+      color: #ffa733;
+      font-weight: 600;
+    }
+
+    /* ----- services list (orange bullets) ----- */
+    .services {
+      margin-top: 0.8rem;
+      list-style: none;
+    }
+
+    .services li {
+      margin: 0.9rem 0;
+      color: #e8e3da;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-bottom: 1px dashed rgba(255, 123, 0, 0.1);
+      padding-bottom: 0.5rem;
+    }
+
+    .services li::before {
+      content: "✦";
+      color: #ff9f1c;
+      font-size: 1.4rem;
+      font-weight: 300;
+      width: 1.6rem;
+      text-align: center;
+      text-shadow: 0 0 8px #ff7b00;
+    }
+
+    /* ----- features (orange glow) ----- */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .feature {
+      background: #121a24;
+      padding: 1.8rem 0.8rem;
+      border-radius: 40px;
+      text-align: center;
+      border: 1px solid rgba(255, 123, 0, 0.2);
+      transition: 0.25s ease;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .feature:hover {
+      background: #1d2735;
+      border-color: #ff8c1a;
+      transform: scale(1.03);
+      box-shadow: 0 0 28px rgba(255, 123, 0, 0.25);
+    }
+
+    .feature i {
+      font-size: 2.5rem;
+      color: #ff9f1c;
+      margin-bottom: 0.3rem;
+      display: block;
+      filter: drop-shadow(0 0 10px rgba(255, 123, 0, 0.3));
+    }
+
+    .feature h3 {
+      color: #ffb347;
+      font-weight: 600;
+      font-size: 1.2rem;
+      letter-spacing: 0.3px;
+    }
+
+    .feature p {
+      color: #b9b4ab;
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+      line-height: 1.3;
+    }
+
+    /* ----- join CTA (orange gradient) ----- */
+    .join {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2.8rem 2rem;
+      border-radius: 50px;
+      background: linear-gradient(145deg, #ff7b00, #e65c00);
+      color: #0b0e14;
+      box-shadow: 0 18px 40px -10px rgba(255, 123, 0, 0.5);
+      transition: 0.3s;
+      border: 1px solid rgba(255, 200, 100, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .join::after {
+      content: "✨";
+      position: absolute;
+      font-size: 6rem;
+      opacity: 0.08;
+      right: -10px;
+      bottom: -20px;
+      transform: rotate(12deg);
+    }
+
+    .join h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0b0e14;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+    }
+
+    .join h2 i {
+      color: #1f1a14;
+      font-size: 2.2rem;
+    }
+
+    .join p {
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0.5rem auto 1.8rem;
+      color: #1f1a14;
+      font-weight: 500;
+      line-height: 1.8;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 0.8rem 1.5rem;
+      border-radius: 60px;
+      backdrop-filter: blur(2px);
+    }
+
+    .join p i {
+      margin-right: 6px;
+      color: #1f1a14;
+    }
+
+    .join button {
+      background: #0b0e14;
+      border: none;
+      padding: 1rem 3.2rem;
+      border-radius: 60px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #ffb95e;
+      cursor: pointer;
+      transition: 0.25s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      border: 1px solid rgba(255, 180, 50, 0.3);
+    }
+
+    .join button i {
+      font-size: 1.5rem;
+      color: #ff9f1c;
+    }
+
+    .join button:hover {
+      background: #1f1a14;
+      color: #ffcc77;
+      transform: scale(1.04);
+      box-shadow: 0 0 30px rgba(255, 123, 0, 0.5);
+      border-color: #ff9f1c;
+    }
+
+    /* ----- responsive touches ----- */
+    @media (max-width: 640px) {
+      .heading h1 {
+        font-size: 2.5rem;
+      }
+      .card h2 {
+        font-size: 1.6rem;
+      }
+      .join {
+        padding: 2rem 1rem;
+        border-radius: 32px;
+      }
+      .join h2 {
+        font-size: 2rem;
+      }
+      .join p {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+      }
+    }
+
+    .copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #888;
+    font-size: 1rem;
+}
+  </style>
+</head>
+<body>
+
+<section class="about">
+
+  <!-- heading with orange glow -->
+  <div class="heading">
+    <h1><i class="fas fa-crown" style="font-size: 2.8rem; color: #ff9f1c; margin-right: 0.3rem;"></i> Yaseen Shahid</h1>
+    <div class="sub-head"><i class="fas fa-circle-check" style="color: #ff9f1c; margin-right: 8px;"></i> Premium Digital Services · Trusted Since 2021</div>
+  </div>
+
+  <!-- two main cards -->
+  <div class="container">
+
+    <div class="card">
+      <h2><i class="fas fa-users"></i> Who We Are</h2>
+      <p>
+        Welcome to <b>Yaseen Shahid</b>, your trusted destination for premium digital tools and professional marketing services at affordable prices.
+        <br><br>
+        We provide genuine premium subscriptions, reliable customer support, fast delivery, and quality service for creators, students, freelancers, and businesses.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-bolt"></i> Our Services</h2>
+      <ul class="services">
+        <li>CapCut Pro</li>
+        <li>Canva Pro</li>
+        <li>InShot Pro</li>
+        <li>Remini Pro</li>
+        <li>Facebook Ads</li>
+        <li>Instagram Ads</li>
+        <li>Social Media Marketing</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- features with orange icons -->
+  <div class="features">
+    <div class="feature">
+      <i class="fas fa-rocket"></i>
+      <h3>Fast Delivery</h3>
+      <p>Quick account activation after payment.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Trusted Service</h3>
+      <p>Safe, reliable &amp; genuine premium.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-tags"></i>
+      <h3>Affordable Prices</h3>
+      <p>Premium tools at budget-friendly rates.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-gift"></i>
+      <h3>Special Deals</h3>
+      <p>Weekly offers, Sunday Deals &amp; discounts.</p>
+    </div>
+  </div>
+
+  <!-- join CTA with orange theme -->
+  <div class="join">
+    <h2><i class="fas fa-star"></i> Why Choose Us? <i class="fas fa-star"></i></h2>
+    <p>
+      <i class="fas fa-check-circle"></i> Genuine Premium Services &nbsp;·&nbsp;
+      <i class="fas fa-headset"></i> Instant Support &nbsp;·&nbsp;
+      <i class="fas fa-wallet"></i> Affordable Pricing <br>
+      <i class="fas fa-users"></i> Trusted by Hundreds &nbsp;·&nbsp;
+      <i class="fas fa-medal"></i> Best Quality Guaranteed
+    </p>
+    <button id="joinBtn">
+      <i class="fab fa-whatsapp"></i> Join Our WhatsApp Group
+    </button>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2026 Yaseen Shahid SMM. All Rights Reserved.</p>
+</div>
+</section>
+<script>
+  (function() {
+    const btn = document.getElementById('joinBtn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        // replace with your actual WhatsApp group link
+        window.open('https://chat.whatsapp.com/YOUR_GROUP_LINK', '_blank');
+      });
+    }
+  })();
+
+</script>
+
+</body>
+</html>
